@@ -3,7 +3,7 @@
     
     <name>Shownieuws</name>
     <description>Het nieuwste Shownieuws</description>
-    <author email="info@degekte.nl" href="http://www.degekte.nl">Shownieuws</author>
+    <author email="info@degekte.nl" href="http://degekte.nl">Shownieuws</author>
 
     <preference name="phonegap-version" value="cli-6.5.0" />
     <feature name="http://api.phonegap.com/1.0/device" />
@@ -49,6 +49,6 @@
     <gap:splash src="res/screen/ios/Default@2x.png" gap:platform="ios" width="680" height="960" />
     <gap:splash src="res/screen/ios/Deafult-568h-2x.png" gap:platform="ios" width="640" height="1136" />
 
-    <content src="http://degekte.nl" />
+    <content src="degekte.nl" />
     <access origin="true" subdomains="true" />
 </widget>
