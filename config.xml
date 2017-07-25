@@ -23,17 +23,20 @@
 <plugin name="org.apache.cordova.vibration" spec="0.3.13" source="npm" />
 <plugin name="org.apache.cordova.network-information" spec="0.2.15" source="npm" />
  
-  	<icon src="icon.png" />
-	
-    <icon src="res/icons/ios/Icon.png" gap:platform="ios" width="57" height="57" />
-    <icon src="res/icons/ios/Icon@2x.png" gap:platform="ios" width="114" height="114" />    
-    <icon src="res/icons/ios/Icon-72.png" gap:platform="ios" width="72" height="72" />
-    <icon src="res/icons/ios/Icon-72@2x.png" gap:platform="ios" width="144" height="144" />
-
-    <icon src="res/icons/android/drawable-ldpi/Icon.png" gap:platform="android" gap:density="ldpi" />
-    <icon src="res/icons/android/drawable-mdpi/Icon.png" gap:platform="android" gap:density="mdpi" />
-    <icon src="res/icons/android/drawable-hdpi/Icon.png" gap:platform="android" gap:density="hdpi" />
-    <icon src="res/icons/android/drawable-xdpi/Icon.png" gap:platform="android" gap:density="xhdpi" />
+<icon src="icon.png" />
+    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" />
+    <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" gap:state="hover"/>
+    <icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
+    <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
+    <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="res/icon/webos/icon-64.png"          gap:platform="webos" />
+    <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
+    <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
 	
     <gap:splash src="splash.png" />
     
