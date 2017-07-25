@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="nlcom.degekte.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://degekte.nl/ns/1.0">
+<widget id="nl.degekte.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://degekte.nl/ns/1.0">
     
     <name>Shownieuws</name>
     <description>Het nieuwste Shownieuws</description>
     <author email="info@degekte.nl" href="http://www.degekte.nl">Shownieuws</author>
 
-    <preference name="phonegap-version" value="3.3.0" />
+    <preference name="phonegap-version" value="cli-6.4.0" />
     <feature name="http://api.phonegap.com/1.0/device" />
     
     <preference name="orientation"                value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
