@@ -10,7 +10,7 @@
     
     <preference name="orientation"                value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
    
-<plugin name="org.apache.cordova.device" spec="0.3.0" source="pgm" />
+<plugin name="org.apache.cordova.device" spec="0.3.0" source="npm" />
 <plugin name="org.apache.cordova.camera" spec="0.3.6" source="npm" />
 <plugin name="org.apache.cordova.media-capture" spec="0.3.6" source="npm" />
 <plugin name="org.apache.cordova.file" spec="1.3.3" source="npm" />
