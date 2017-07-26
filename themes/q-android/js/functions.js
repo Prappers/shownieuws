@@ -925,7 +925,6 @@ if(AdMob) AdMob.createBanner({
     offsetTopBar: false,
     adSize: 'SMART_BANNER',
     position: AdMob.AD_POSITION.BOTTOM_CENTER,
-    isTesting: , // set to true, to receiving test ad for testing purpose
     bgColor: 'black', // color name, or '#RRGGBB'
 });
 });
