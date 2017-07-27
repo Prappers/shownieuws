@@ -27,7 +27,8 @@
 	<plugin name="cordova-plugin-statusbar" source="npm" />
 	<plugin name="cordova-plugin-crosswalk-webview" spec="2.3.0" source="npm" />
 	<gap:plugin name="cordova-plugin-admobpro" source="npm" />
-
+	<gap:plugin name="cordova-plugin-appsflyer-sdk" source="npm" />
+	
 	<!-- Whitelist policy  -->
 	<access origin="*" />
 	<allow-intent href="*" />
