@@ -58,4 +58,8 @@
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxhdpi.9.png" gap:platform="android" gap:qualifier="xxhdpi" />
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxxhdpi.9.png" gap:platform="android" gap:qualifier="xxxhdpi" />
 	
+	<gap:config-file platform="android" parent="/manifest">
+    <supports-screens android:xlargeScreens="true" android:largeScreens="true"  android:normalScreens="true" android:smallScreens="true" />
+</gap:config-file>
+	
 </widget>
