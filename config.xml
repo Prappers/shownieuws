@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
+	xmlns:android = "http://schemas.android.com/apk/res/android"
         id          = "nl.degekte.app"
         versionCode = "1.0.1"
-        version     = "1.0.6" >
+        version     = "1.0.7" >
 
 	<name>Shownieuws</name>
 
@@ -18,6 +19,8 @@
 
 	<preference name="disallowOverscroll" value="true" />
 	<preference name="webviewbounce" value="false" />
+	
+	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="15" />
 	
 	<!-- PhoneGap plugin declaration -->
 <plugin name="cordova-plugin-admobpro" spec="2.29.21" />
