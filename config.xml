@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
-        xmlns:gap   = "http://phonegap.com/ns/1.0"
-	xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:gap   = "http://phonegap.com/ns/1.0
         id          = "nl.degekte.app"
         versionCode = "1.0.1"
         version     = "1.0.4" >
-
+			     
 	<name>Shownieuws</name>
 
 	<description>Het nieuwste shownieuws</description>
@@ -18,10 +17,7 @@
 	
 	<preference name="disallowOverscroll" value="true" />
 	<preference name="webviewbounce" value="false" />
-	
-	<gap:config-file platform="android" parent="/manifest">
-    <supports-screens android:xlargeScreens="true" android:normalScreens="true" android:largeScreens="true" android:smallScreens="true" />
-</gap:config-file>
+
 	
 	<!-- PhoneGap plugin declaration -->
 <plugin name="cordova-plugin-admobpro" spec="2.29.21" />
