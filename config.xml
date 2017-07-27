@@ -10,13 +10,6 @@
 	<description>Het nieuwste shownieuws</description>
 
 	<author href="" email=""></author>
-<gap:config-file platform="android" parent="/manifest">
-	<supports-screens 
-        android:xlargeScreens="true" 
-        android:largeScreens="true" 
-	android:normalScreens="true" 
-        android:smallScreens="true" />
-</gap:config-file>
 
 	<gap:platform name="android" />
 	<preference name="android-build-tool" value="gradle" />
