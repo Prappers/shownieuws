@@ -10,14 +10,7 @@
 	<description>Het nieuwste shownieuws</description>
 
 	<author href="" email=""></author>
-
-	<gap:platform name="android" />
-	<preference name="android-build-tool" value="gradle" />
-	<preference name="permissions" value="none"/>
-	
-	<preference name="disallowOverscroll" value="true" />
-	<preference name="webviewbounce" value="false" />
-	<gap:config-file platform="android" parent="/manifest">
+<gap:config-file platform="android" parent="/manifest">
 	<supports-screens 
         android:xlargeScreens="true" 
         android:largeScreens="true" 
@@ -25,6 +18,13 @@
         android:smallScreens="true" />
 </gap:config-file>
 
+	<gap:platform name="android" />
+	<preference name="android-build-tool" value="gradle" />
+	<preference name="permissions" value="none"/>
+	
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="webviewbounce" value="false" />
+	
 	<!-- PhoneGap plugin declaration -->
 <plugin name="cordova-plugin-admobpro" spec="2.29.21" />
 <plugin name="cordova-plugin-appsflyer-sdk" spec="4.2.23" />
