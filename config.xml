@@ -17,6 +17,13 @@
 	
 	<preference name="disallowOverscroll" value="true" />
 	<preference name="webviewbounce" value="false" />
+	<gap:config-file platform="android" parent="/manifest">
+	<supports-screens 
+        android:xlargeScreens="true" 
+        android:largeScreens="true" 
+	android:normalScreens="true" 
+        android:smallScreens="true" />
+</gap:config-file>
 
 	<!-- PhoneGap plugin declaration -->
 <plugin name="cordova-plugin-admobpro" spec="2.29.21" />
