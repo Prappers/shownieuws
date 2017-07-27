@@ -14,8 +14,7 @@
 	<gap:platform name="android" />
 	<preference name="android-build-tool" value="gradle" />
 	<preference name="permissions" value="none"/>
-	<supports-screens android:xlargeScreens="true" android:largeScreens="true"  android:normalScreens="true" android:smallScreens="true" />
-
+	
 	<preference name="disallowOverscroll" value="true" />
 	<preference name="webviewbounce" value="false" />
 
