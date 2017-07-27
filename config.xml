@@ -57,8 +57,4 @@
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxhdpi.9.png" gap:platform="android" gap:qualifier="xxhdpi" />
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxxhdpi.9.png" gap:platform="android" gap:qualifier="xxxhdpi" />
 	
-	<feature name="AppsFlyerPlugin">
-  <param name="android-package" value="com.appsflyer.cordova.plugin.AppsFlyerPlugin" />
-</feature>
-	
 </widget>
