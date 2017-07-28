@@ -916,7 +916,7 @@ define([
         
     }
     /*
-* AdMob's tests
+* AdMob
 */
  
 if(AdMob) AdMob.createBanner({
