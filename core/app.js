@@ -1793,5 +1793,18 @@ define(function (require) {
     }
     window.plugins.appsFlyer.initSdk(options);
 }, false);
-	
+	document.addEventListener("deviceready", function(){
+    
+   var options = {
+             devKey:  'xxXXXXXxXxXXXXxXXxxxx8'// your AppsFlyer devKey               
+           };
+
+    var userAgent = window.navigator.userAgent.toLowerCase();
+                          
+    if (/iphone|ipad|ipod/.test( userAgent )) {
+        options.appId = "123456789";            // your ios app id in app store        
+    }
+    window.plugins.appsFlyer.initSdk(options);
+}, false);
 });
+
