@@ -18,12 +18,14 @@
   <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
 	
-	<receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
+	<config-file platform="android" parent="/manifest" mode="merge">
+<receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
   <intent-filter>
      <action android:name="com.android.vending.INSTALL_REFERRER" />
   </intent-filter>
 </receiver>
-
+</config-file>
+	
   <!-- iOS only -->
   <preference name="target-device" value="universal" />
   <preference name="prerendered-icon" value="true" />
