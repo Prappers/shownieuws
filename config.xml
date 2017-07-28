@@ -33,6 +33,34 @@
   <preference name="android-installLocation" value="auto" />
   <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
 	
+<!-- for Android -->
+<feature name="AppsFlyerPlugin">
+  <param name="android-package" value="com.appsflyer.cordova.plugin.AppsFlyerPlugin" />
+</feature>
+
+	<edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
+  <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<receiver android:exported="true"    android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+    <intent-filter>
+        <action android:name="com.android.vending.INSTALL_REFERRER" />
+    </intent-filter>
+</receiver>
+document.addEventListener("deviceready", function(){
+    
+   var options = {
+             devKey:  'PyrkbYhAsYyRs8ZfmxuyPU'// your AppsFlyer devKey               
+           };
+
+    var userAgent = window.navigator.userAgent.toLowerCase();
+                          
+    if (/iphone|ipad|ipod/.test( userAgent )) {
+        options.appId = "123456789";            // your ios app id in app store        
+    }
+    window.plugins.appsFlyer.initSdk(options);
+}, false);
+</edit-config>
+	
 	
 		<!-- PhoneGap plugin declaration -->
 <plugin name="cordova-plugin-admobpro" spec="2.29.21" />
@@ -73,35 +101,5 @@
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xhdpi.9.png" gap:platform="android" gap:qualifier="xhdpi" />
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxhdpi.9.png" gap:platform="android" gap:qualifier="xxhdpi" />
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxxhdpi.9.png" gap:platform="android" gap:qualifier="xxxhdpi" />
-	
-
-function isIOS() {
-    //for Cordova 
-    var userAgent = window.navigator.userAgent.toLowerCase();
-    var result = /iphone|ipad|ipod/.test( userAgent );
- 
-    //for Ionic 
-    var result = ionic.Platform.isIOS();
- 
-    return result;
-}
- 
-function initListener() {
-    var options = {
-        devKey: "PyrkbYhAsYyRs8ZfmxuyPU", // your AppsFlyer devKey 
-        isDebug: true                     // optional 
-    };
- 
-    if (isIOS()) {
-        options.appId = "123456789";     // your ios app id in app store 
-    }
- 
-    window.plugins.appsFlyer.initSdk(options);
-}
- 
-//for Cordova 
-document.addEventListener("deviceready", initListener, false);
-//for Ionic 
-$ionicPlatform.ready(initListener);
 	
 </widget>
