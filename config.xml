@@ -12,6 +12,7 @@
 	<author href="De Gekte" email="info@degekte.nl"></author>
 
 	<gap:platform name="android" />
+	<gap:plugin name="cordova-plugin-appsflyer" version="4.2.3" />
 
 	<!-- all platforms -->
   <preference name="phonegap-version" value="cli-6.5.0" />
@@ -36,7 +37,6 @@
 	
 		<!-- PhoneGap plugin declaration -->
 <plugin name="cordova-plugin-admobpro" spec="2.29.21" />
-<plugin name="com.appsflyer.phonegap.plugins.appsflyer" spec="1.0.1" source="pgb" />
 <plugin name="cordova-plugin-device" spec="1.1.6" />
 <plugin name="cordova-plugin-inappbrowser" spec="1.7.1" />
 <plugin name="cordova-plugin-network-information" spec="1.3.3" />
@@ -74,17 +74,34 @@
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxhdpi.9.png" gap:platform="android" gap:qualifier="xxhdpi" />
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxxhdpi.9.png" gap:platform="android" gap:qualifier="xxxhdpi" />
 	
-	document.addEventListener("deviceready", function(){
-    var args = [];
-    var devKey = "PyrkbYhAsYyRs8ZfmxuyPU";   // your AppsFlyer devKey
-    args.push(devKey);
+
+function isIOS() {
+    //for Cordova 
     var userAgent = window.navigator.userAgent.toLowerCase();
-                          
-    if (/iphone|ipad|ipod/.test( userAgent )) {
-        var appId = "123456789";            // your ios app id in app store
-        args.push(appId);
+    var result = /iphone|ipad|ipod/.test( userAgent );
+ 
+    //for Ionic 
+    var result = ionic.Platform.isIOS();
+ 
+    return result;
+}
+ 
+function initListener() {
+    var options = {
+        devKey: "PyrkbYhAsYyRs8ZfmxuyPU", // your AppsFlyer devKey 
+        isDebug: true                     // optional 
+    };
+ 
+    if (isIOS()) {
+        options.appId = "123456789";     // your ios app id in app store 
     }
-	window.plugins.appsFlyer.initSdk(args);
-}, false);
+ 
+    window.plugins.appsFlyer.initSdk(options);
+}
+ 
+//for Cordova 
+document.addEventListener("deviceready", initListener, false);
+//for Ionic 
+$ionicPlatform.ready(initListener);
 	
 </widget>
