@@ -46,19 +46,7 @@
         <action android:name="com.android.vending.INSTALL_REFERRER" />
     </intent-filter>
 </receiver>
-document.addEventListener("deviceready", function(){
-    
-   var options = {
-             devKey:  'PyrkbYhAsYyRs8ZfmxuyPU'// your AppsFlyer devKey               
-           };
 
-    var userAgent = window.navigator.userAgent.toLowerCase();
-                          
-    if (/iphone|ipad|ipod/.test( userAgent )) {
-        options.appId = "123456789";            // your ios app id in app store        
-    }
-    window.plugins.appsFlyer.initSdk(options);
-}, false);
 </edit-config>
 	
 	
