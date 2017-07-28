@@ -1179,7 +1179,7 @@ to <code>platforms/ios/&lt;ProjectName&gt;/Plugins</code></li>
 <div class="highlight highlight-source-js"><pre><span class="pl-c1">document</span>.<span class="pl-c1">addEventListener</span>(<span class="pl-s"><span class="pl-pds">"</span>deviceready<span class="pl-pds">"</span></span>, <span class="pl-k">function</span>(){
     
    <span class="pl-k">var</span> options <span class="pl-k">=</span> {
-             devKey<span class="pl-k">:</span>  <span class="pl-s"><span class="pl-pds">'</span>xxXXXXXxXxXXXXxXXxxxx8<span class="pl-pds">'</span></span><span class="pl-c"><span class="pl-c">//</span> your AppsFlyer devKey               </span>
+             devKey<span class="pl-k">:</span>  <span class="pl-s"><span class="pl-pds">'</span>PyrkbYhAsYyRs8ZfmxuyPU<span class="pl-pds">'</span></span><span class="pl-c"><span class="pl-c">//</span> your AppsFlyer devKey               </span>
            };
 
     <span class="pl-k">var</span> userAgent <span class="pl-k">=</span> <span class="pl-c1">window</span>.<span class="pl-smi">navigator</span>.<span class="pl-c1">userAgent</span>.<span class="pl-c1">toLowerCase</span>();
@@ -1193,7 +1193,7 @@ to <code>platforms/ios/&lt;ProjectName&gt;/Plugins</code></li>
 <div class="highlight highlight-source-js"><pre>  <span class="pl-smi">$ionicPlatform</span>.<span class="pl-en">ready</span>(<span class="pl-k">function</span>() {      
     
     <span class="pl-k">var</span> options <span class="pl-k">=</span> {
-           devKey<span class="pl-k">:</span>  <span class="pl-s"><span class="pl-pds">'</span>xxXXXXXxXxXXXXxXXxxxx8<span class="pl-pds">'</span></span><span class="pl-c"><span class="pl-c">//</span> your AppsFlyer devKey               </span>
+           devKey<span class="pl-k">:</span>  <span class="pl-s"><span class="pl-pds">'</span>PyrkbYhAsYyRs8ZfmxuyPU<span class="pl-pds">'</span></span><span class="pl-c"><span class="pl-c">//</span> your AppsFlyer devKey               </span>
          };
                               
     <span class="pl-k">if</span> (<span class="pl-smi">ionic</span>.<span class="pl-smi">Platform</span>.<span class="pl-en">isIOS</span>()) {
