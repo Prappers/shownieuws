@@ -4,7 +4,7 @@
 	xmlns:android = "http://schemas.android.com/apk/res/android"
         id          = "nl.degekte.app"
         versionCode = "1.0.1"
-        version     = "1.0.7" >
+        version     = "1.0.8" >
 
 	<name>Shownieuws</name>
 
@@ -21,9 +21,8 @@
 	<preference name="webviewbounce" value="false" />
 	
 	<gap:config-file platform="android" parent="/manifest">
-    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="15" />
-		<uses-feature android:name="android.hardware.WIFI" android:required="false" />
-		<uses-feature android:name="android.hardware.FAKETOUCH" android:required="false" />
+		<uses-feature android:name="android.hardware.WIFI" android:required="true" />
+		<uses-feature android:name="android.hardware.FAKETOUCH" android:required="true" />
 </gap:config-file>
 	
 	
