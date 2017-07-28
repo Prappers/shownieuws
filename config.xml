@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "nl.degekte.app"
         versionCode = "1.0.1"
-        version     = "1.1.7" >
+        version     = "1.1.8" >
 
 	<name>Shownieuws</name>
 
@@ -17,6 +17,12 @@
   <preference name="phonegap-version" value="cli-6.5.0" />
   <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
+	
+	<receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
+  <intent-filter>
+     <action android:name="com.android.vending.INSTALL_REFERRER" />
+  </intent-filter>
+</receiver>
 
   <!-- iOS only -->
   <preference name="target-device" value="universal" />
