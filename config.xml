@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "nl.degekte.app"
         versionCode = "1.0.1"
-        version     = "1.0.12 >
+        version     = "1.1.1 >
 
 	<name>Shownieuws</name>
 
@@ -38,7 +38,6 @@
 <plugin name="cordova-plugin-splashscreen" spec="4.0.3" />
 <plugin name="cordova-plugin-crosswalk-webview" spec="2.3.0" />
 <plugin name="cordova-plugin-inappbrowser" spec="1.7.1" />
-<plugin name="cordova-plugin-statusbar" spec="2.2.3" />
 
 
 	<!-- SplashScreen configuration -->
