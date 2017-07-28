@@ -12,11 +12,6 @@
 	<author href="De Gekte" email="info@degekte.nl"></author>
 
 	<gap:platform name="android" />
-
-	<!-- all platforms -->
-  <preference name="phonegap-version" value="cli-6.5.0" />
-  <preference name="orientation" value="portrait" />
-  <preference name="fullscreen" value="true" />
 	
 	<config-file platform="android" parent="/manifest" mode="merge">
 <receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
@@ -25,6 +20,12 @@
   </intent-filter>
 </receiver>
 </config-file>
+
+	<!-- all platforms -->
+  <preference name="phonegap-version" value="cli-6.5.0" />
+  <preference name="orientation" value="portrait" />
+  <preference name="fullscreen" value="true" />
+
 	
   <!-- iOS only -->
   <preference name="target-device" value="universal" />
