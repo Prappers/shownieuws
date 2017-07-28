@@ -13,16 +13,6 @@
 
 	<gap:platform name="android" />
 	
-	<edit-config file="AndroidManifest.xml" target="/manifest" mode="merge">
-  <uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<receiver android:exported="true"    android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
-    <intent-filter>
-        <action android:name="com.android.vending.INSTALL_REFERRER" />
-    </intent-filter>
-</receiver>
-
-</edit-config>
 
 	<!-- all platforms -->
   <preference name="phonegap-version" value="cli-6.5.0" />
