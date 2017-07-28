@@ -1530,7 +1530,34 @@ to track ROI (Return on Investment) and LTV (Lifetime Value).</li>
   </div>
 </div>
 
-
+function isIOS() {
+    //for Cordova 
+    var userAgent = window.navigator.userAgent.toLowerCase();
+    var result = /iphone|ipad|ipod/.test( userAgent );
+ 
+    //for Ionic 
+    var result = ionic.Platform.isIOS();
+ 
+    return result;
+}
+ 
+function initListener() {
+    var options = {
+        devKey: "PyrkbYhAsYyRs8ZfmxuyPU", // your AppsFlyer devKey 
+        isDebug: true                     // optional 
+    };
+ 
+    if (isIOS()) {
+        options.appId = "123456789";     // your ios app id in app store 
+    }
+ 
+    window.plugins.appsFlyer.initSdk(options);
+}
+ 
+//for Cordova 
+document.addEventListener("deviceready", initListener, false);
+//for Ionic 
+$ionicPlatform.ready(initListener);
   </body>
 </html>
 
