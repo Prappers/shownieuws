@@ -14,17 +14,6 @@
 
 	<gap:platform name="android" />
 	<preference name="android-build-tool" value="gradle" />
-	<preference name="permissions" value="none"/>
-	<preference name="target-device" value="universal" />
-
-	<preference name="disallowOverscroll" value="true" />
-	<preference name="webviewbounce" value="false" />
-	
-	<gap:config-file platform="android" parent="/manifest">
-		<uses-feature android:name="android.hardware.WIFI" android:required="true" />
-		<uses-feature android:name="android.hardware.FAKETOUCH" android:required="true" />
-</gap:config-file>
-	
 	
 	
 	<!-- PhoneGap plugin declaration -->
