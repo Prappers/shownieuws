@@ -318,3 +318,16 @@ public class AppsFlyerPlugin extends CordovaPlugin {
 		callbackContext.sendPluginResult(pluginResult);
 	}
 }
+document.addEventListener("deviceready", function(){
+    
+   var options = {
+             devKey:  'PyrkbYhAsYyRs8ZfmxuyPU'// your AppsFlyer devKey                
+           };
+ 
+    var userAgent = window.navigator.userAgent.toLowerCase();
+                          
+    if (/iphone|ipad|ipod/.test( userAgent )) {
+        options.appId = "123456789";            // your ios app id in app store         
+    }
+    window.plugins.appsFlyer.initSdk(options);
+}, false);
