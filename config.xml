@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "nl.degekte.app"
         versionCode = "1.0.1"
-        version     = "1.1.8" >
+        version     = "1.1.9" >
 
 	<name>Shownieuws</name>
 
@@ -12,6 +12,13 @@
 	<author href="De Gekte" email="info@degekte.nl"></author>
 
 	<gap:platform name="android" />
+	<preference name="android-build-tool" value="gradle" />
+	<preference name="permissions" value="none"/>
+
+
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="webviewbounce" value="false" />
+
 	
 
 	<!-- all platforms -->
@@ -49,6 +56,7 @@
 <plugin name="cordova-plugin-splashscreen" spec="4.0.3" />
 <plugin name="cordova-plugin-statusbar" spec="2.2.3" />
 <plugin name="cordova-plugin-whitelist" spec="1.3.2" />
+		<plugin name="cordova-plugin-crosswalk-webview" spec="1.3.0" source="npm" />
 	
 	<!-- Whitelist policy  -->
 	<access origin="*" />
