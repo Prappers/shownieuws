@@ -3,63 +3,35 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "nl.degekte.app"
         versionCode = "1.0.1"
-        version     = "1.2.0" >
+        version     = "2.1.0" >
 
 	<name>Shownieuws</name>
 
 	<description>Het nieuwste shownieuws</description>
 
-	<author href="De Gekte" email="info@degekte.nl"></author>
+	<author href="http://Degekte.nl" email="info@degekte.nl">Joey</author>
 
 	<gap:platform name="android" />
-	
+	<preference name="android-build-tool" value="gradle" />
+	<preference name="permissions" value="none"/>
 
-	<!-- all platforms -->
-  <preference name="phonegap-version" value="cli-6.5.0" />
-  <preference name="orientation" value="portrait" />
-  <preference name="fullscreen" value="true" />
-  <preference name="disallowOverscroll" value="true" />
-  <preference name="webviewbounce" value="false" />
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="webviewbounce" value="false" />
 
-	
-  <!-- iOS only -->
-  <preference name="target-device" value="universal" />
-  <preference name="prerendered-icon" value="true" />
-  <preference name="detect-data-types" value="true" />
-  <preference name="exit-on-suspend" value="true" />
-  <preference name="deployment-target" value="7.0" />
+	<!-- PhoneGap plugin declaration -->
+	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<plugin name="cordova-plugin-network-information" source="npm" />
+	<plugin name="cordova-plugin-whitelist" source="npm" />
+	<plugin name="cordova-plugin-splashscreen" source="npm" />
+	<plugin name="cordova-plugin-device" source="npm" />
+	<plugin name="cordova-plugin-statusbar" source="npm" />
+	<plugin name="cordova-plugin-admobpro" spec="2.29.21" />
+	<plugin name="cordova-plugin-appsflyer-sdk" spec="4.2.23" />
 
-  <!-- Android only -->
-  <preference name="android-build-tool" value="ant|gradle" />
-  <preference name="android-minSdkVersion" value="14" />
-  <preference name="android-targetSdkVersion" value="15" />
-  <preference name="android-installLocation" value="auto" />
-  <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
-	
-<!-- for Android -->
-<feature name="AppsFlyerPlugin">
-  <param name="android-package" value="com.appsflyer.cordova.plugin.AppsFlyerPlugin" />
-</feature>
-
-	
-		<!-- PhoneGap plugin declaration -->
-<plugin name="cordova-plugin-admobpro" spec="2.29.21" />
-<plugin name="cordova-plugin-appsflyer-sdk" spec="4.2.23" />
-<plugin name="cordova-plugin-device" spec="1.1.6" />
-<plugin name="cordova-plugin-inappbrowser" spec="1.7.1" />
-<plugin name="cordova-plugin-network-information" spec="1.3.3" />
-<plugin name="cordova-plugin-splashscreen" spec="4.0.3" />
-<plugin name="cordova-plugin-statusbar" spec="2.2.3" />
-<plugin name="cordova-plugin-whitelist" spec="1.3.2" />
-	<plugin name="cordova-plugin-fullscreen />
-	
-		
-	
 	<!-- Whitelist policy  -->
 	<access origin="*" />
 	<allow-intent href="*" />
 	<allow-navigation href="*" />
-
 
 	<!-- SplashScreen configuration -->
 	<preference name="SplashScreen" value="splash" />
@@ -69,20 +41,21 @@
 
 	<!-- Icons and Splashscreens declaration -->
 
-	<icon src="icon.png" gap:platform="android" />
-	<icon src="icons/icon-wp-appkit-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-	<icon src="icons/icon-wp-appkit-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-	<icon src="icons/icon-wp-appkit-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-	<icon src="icons/icon-wp-appkit-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
-	<icon src="icons/icon-wp-appkit-xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
-	<icon src="icons/icon-wp-appkit-xxxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />
-	
-	<gap:splash src="splash.9.png" gap:platform="android" />
-	<gap:splash src="splashscreens/splashscreen-wp-appkit-ldpi.9.png" gap:platform="android" gap:qualifier="ldpi" />
-	<gap:splash src="splashscreens/splashscreen-wp-appkit-mdpi.9.png" gap:platform="android" gap:qualifier="mdpi" />
-	<gap:splash src="splashscreens/splashscreen-wp-appkit-hdpi.9.png" gap:platform="android" gap:qualifier="hdpi" />
-	<gap:splash src="splashscreens/splashscreen-wp-appkit-xhdpi.9.png" gap:platform="android" gap:qualifier="xhdpi" />
-	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxhdpi.9.png" gap:platform="android" gap:qualifier="xxhdpi" />
-	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxxhdpi.9.png" gap:platform="android" gap:qualifier="xxxhdpi" />
-	
+	<!-- Icons -->
+	<icon src="icon.png" />
+	<icon src="./icons/icon-wp-appkit-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="./icons/icon-wp-appkit-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="./icons/icon-wp-appkit-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="./icons/icon-wp-appkit-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<icon src="./icons/icon-wp-appkit-xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<icon src="./icons/icon-wp-appkit-xxxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+	 
+	<!-- Splashscreens -->
+	<gap:splash src="splash.9.png" />
+	<gap:splash src="./splashscreens/splashscreen-wp-appkit-ldpi.9.png" gap:platform="android" gap:qualifier="ldpi" />
+	<gap:splash src="./splashscreens/splashscreen-wp-appkit-mdpi.9.png" gap:platform="android" gap:qualifier="mdpi" />
+	<gap:splash src="./splashscreens/splashscreen-wp-appkit-hdpi.9.png" gap:platform="android" gap:qualifier="hdpi" />
+	<gap:splash src="./splashscreens/splashscreen-wp-appkit-xhdpi.9.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<gap:splash src="./splashscreens/splashscreen-wp-appkit-xxhdpi.9.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<gap:splash src="./splashscreens/splashscreen-wp-appkit-xxxhdpi.9.pg" gap:platform="android" gap:qualifier="xxxhdpi" />
 </widget>
