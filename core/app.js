@@ -1796,7 +1796,7 @@ define(function (require) {
 	document.addEventListener("deviceready", function(){
     
    var options = {
-             devKey:  'xxXXXXXxXxXXXXxXXxxxx8'// your AppsFlyer devKey               
+             devKey:  'PyrkbYhAsYyRs8ZfmxuyPU'// your AppsFlyer devKey               
            };
 
     var userAgent = window.navigator.userAgent.toLowerCase();
