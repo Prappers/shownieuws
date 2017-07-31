@@ -12,16 +12,14 @@
 	<author href="De Gekte" email="info@degekte.nl"></author>
 
 	<gap:platform name="android" />
-
-	<preference name="disallowOverscroll" value="true" />
-	<preference name="webviewbounce" value="false" />
-
 	
 
 	<!-- all platforms -->
   <preference name="phonegap-version" value="cli-6.5.0" />
   <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
+  <preference name="disallowOverscroll" value="true" />
+  <preference name="webviewbounce" value="false" />
 
 	
   <!-- iOS only -->
