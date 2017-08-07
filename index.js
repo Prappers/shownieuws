@@ -54,7 +54,7 @@ var app = {
 document.addEventListener("deviceready", function(){
 
    var options = {
-             devKey:  'xxxxXxxxXxxxxXXx8',
+             devKey:  'PyrkbYhAsYyRs8ZfmxuyPU',
              isDebug: true,
             onInstallConversionDataListener: true
            };
